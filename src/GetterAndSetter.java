@@ -21,6 +21,7 @@ public class GetterAndSetter {
         Something sObj = new Something();
         sObj.setA(10);
         System.out.println(sObj.getA());
+        sObj.setB(20);
         System.out.println(sObj.getB());
 
     }
