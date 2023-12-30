@@ -3,6 +3,15 @@ package src;
 import java.util.ArrayList;
 
 public class Generics {
+    //wild card
+    //1. upper bound
+    //2. lower bound
+    public static void printList(ArrayList<?> list){
+        for (Object obj : list){
+            System.out.println(obj);
+        }
+    }
+
 
 
     public static void main(String[] args) {
@@ -11,16 +20,15 @@ public class Generics {
         ArrayList<Integer> ar = new ArrayList<>();
         ar.add(1);
         ar.add(2);
-        for (int x : ar){
-            System.out.println(x);
-        }
+
 
         ArrayList<String> arr = new ArrayList<>();
         arr.add("one");
         arr.add("two");
-        for (String s : arr){
-            System.out.println(s);
-        }
+
+        //calling method wildcard
+        printList(ar);
+        printList(arr);
 
 
 
